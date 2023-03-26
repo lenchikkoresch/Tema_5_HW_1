@@ -31,5 +31,19 @@ else:
     for i in c:
         sum += int(i)
     print (f"Сумма цифр числа {c} равна {sum}.")
+    
+
+#Почему не работает этот код
+c = input('Введите трехзначное число: ')
+if type(c) == int:
+    n = int (c)
+    summa=0
+    while n>0:
+        x = n % 10
+        summa = summa + x
+        n = n // 10
+    print (f"Сумма цифр числа {c} равна {summa}.") 
+else:
+    print ("Ввели не число")  
 
     
